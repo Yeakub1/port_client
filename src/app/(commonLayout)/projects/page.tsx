@@ -22,21 +22,15 @@ const ProjectsPage = () => {
   }, [error, refetch]);
 
   return (
-    <div>
-      <Title
-        title="Projects"
-        description={projectDescription}
-        route="Projects"
-      />
-
+    <div className="bg-[#190128] text-white">
       <div className="xl:container mx-auto px-4 pt-20 pb-[100px]">
         {!projectsData && <LargeSpinner />}
-        <div className="grid md:grid-cols-2 gap-10 lg:px-16 mb-20">
+        <div className="grid md:grid-cols-3 gap-5 lg:px-16 mb-20">
           {projectsData?.data?.map((item: any) => {
             return (
               <div data-aos="fade-up" key={item.id} className="bg-gray-950">
                 <div className="h-fit relative overflow-hidden group">
-                  <div className="h-[270px] md:h-[380px] relative overflow-hidden group">
+                  <div className="h-[200px] md:h-[280px] relative overflow-hidden group">
                     <div className="absolute top-0 left-0 h-full w-full bg-violet-800/50 z-10  group-hover:bg-gray-800/50 transition-all duration-300 ease-in-out"></div>
                     <Image
                       src={item.imageLinks[0]}
