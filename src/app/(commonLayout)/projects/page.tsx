@@ -48,7 +48,7 @@ const ProjectsPage = () => {
                   </h2>
                   <Link
                     href={`/projects/${item.id}`}
-                    className="text-center bg-violet-800 hover:bg-violet-900 transition-all duration-500 ease-in-out font-semibold rounded-sm py-2 w-[150px]"
+                    className="text-center bg-[#09867E] font-semibold rounded-sm py-2 w-[150px]"
                   >
                     Show Details
                   </Link>

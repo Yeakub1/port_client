@@ -10,7 +10,7 @@ const blogsApi = baseApi.injectEndpoints({
     }),
     getSingleBlog: builder.query({
       query: (blogId) => ({
-        url: `/blogs/${blogId}`,
+        url: `/blog/${blogId}`,
         method: "GET",
       }),
     }),

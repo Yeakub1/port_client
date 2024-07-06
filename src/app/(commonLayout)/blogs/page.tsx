@@ -31,9 +31,8 @@ const BlogsPage = () => {
   }, [error, refetch]);
 
   return (
-    <div>
-      <Title title="Blogs" description={blogDescription} route="Blogs" />
-      <div className="xl:container mx-auto px-4 py-20">
+    <div className="bg-[#190128] text-white">
+      <div className="xl:max-w-7xl mx-auto px-4 py-20">
         {!blogsData && <LargeSpinner />}
         <div className="mb-[100px]">
           {blogsData?.data?.map((blog: any) => {
@@ -65,7 +64,7 @@ const BlogsPage = () => {
                   />
                   <Link
                     href={`/blogs/${blog.id}`}
-                    className="bg-violet-800 hover:bg-violet-900 transition-colors duration-300 ease-in-out py-2 px-5 mt-auto rounded-sm font-semibold text-gray-300"
+                    className="bg-[#09867E] py-2 px-5 mt-auto rounded-sm font-semibold text-gray-300"
                   >
                     Read More
                   </Link>
